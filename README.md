@@ -1,2 +1,4 @@
 # MercyStartNgProject1
 This is the first Github repository I made for Start NG.
+The distance between my dream of having a name and carving a niche for myself in the technology industry is certainly closer than I ever thought it would be. The Start NG program has challenged me by giving tasks, materials, mentors and a community to ensure that I keep learning  while being aware of the competition that surrounds me. One of these tasks is the HTML file in this repository. It was created with just HTML code. The directions given for this task were to use solely HTML code to create and design this using personal creativity as a medium of differentiation. It contains my Curriculum Vitae which hold a recent picture of mine. It also contains a blog post which let's us show the level of creativity we can reach with common English.
+https://myhnginternship.blogspot.com/2019/08/flutterwave-new-dawn-in-fintech-industry.html?m=1
