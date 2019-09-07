@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+* {
+/* With these codes padding and border does not increase it's width and gives intuitive style.*/
+
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+body {
+margin:0;
+padding:0;
+font-family: 'Roboto Slab', serif;
+}
+div#envelope{
+width: 55%;
+margin: 10px 30% 5px 25%;
+padding:10px 0;
+border: 2px solid rgb(19, 15, 15);
+border-radius:10px;
+}
+form{
+width:50%;
+margin:4% 15%;
+}
+header{
+background-color: rgb(14, 13, 13) ;
+width: 150%;
+text-align: center;
+padding-top: 12px;
+padding-bottom: 15px;
+margin-top: 2px;
+margin-bottom:15px;
+border-radius: 10px 10px 10px 10px;
+color: rgb(164, 167, 170);
+}
+/* Makes responsive fields. Sets size and field alignment.*/
+input[type=text]{
+margin-bottom: 20px;
+margin-top: 10px;
+width:100%;
+padding: 15px;
+border-radius:5px 5px 5px 5px;
+border:1px solid #29312f;
+}
+input[type=email]{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width:100%;
+    padding: 15px;
+    border-radius:5px 5px 5px 5px;
+    border:1px solid #29312f;
+    }
+input[type=tel]{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width:100%;
+    padding: 15px;
+    border-radius:5px 5px 5px 5px;
+    border:1px solid #29312f;
+    }
+input[type=url]{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width:100%;
+    padding: 15px;
+    border-radius:5px 5px 5px 5px;
+    border:1px solid #29312f;
+    }
+textarea{
+width:100%;
+padding: 15px;
+margin-top: 10px;
+border:1px solid #29312f;
+border-radius:5px 5px 5px 5px;
+margin-bottom: 20px;
+resize:none;
+}
+input[type=text]:focus,textarea:focus {
+border-color: #4697e4;
+}
+input[type=submit]
+    {
+        margin-bottom: 20px;
+        width:50%;
+        -webkit-box-align: center;
+        padding: 15px;
+        border-radius:10px 10px 10px 10px;
+        border:1px solid #e5ebe9;
+        background-color: rgb(23, 26, 29);
+        color: rgb(164, 167, 170);
+        font-size:15px;
+        cursor: pointer;
+    }      
+#submit:hover
+    {
+    background-color: black;
+    }
