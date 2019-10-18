@@ -1,245 +1,373 @@
-
 <!DOCTYPE html>
 <html lang="en">
- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
-    <!-- OPTIONAL: description -->
-    <meta name="description" content="">
-    <!-- OPTIONAL: author -->
-    <meta name="Mercy" content="my css cv">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="icon.png" />
-    
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <script src="https://kit.fontawesome.com/7967e81f77.js" crossorigin="anonymous"></script>
+                
+                <title>Navbar</title>
+                </head>
+                <body>
+                    <style>
+                        * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              margin: 0px;
+              font-family: 'segoe ui';
+            }
+            
+            .nav {
+              height: 50px;
+              width: 100%;
+              background-color: black;
+              position: relative;
+            }
+            
+            .nav > .nav-header {
+              display: inline;
+            }
+            
+            .nav > .nav-header > .nav-title {
+              display: inline-block;
+              font-size: 22px;
+              color: #fff;
+              padding: 10px 10px 10px 10px;
+            }
+            
+            .nav > .nav-btn {
+              display: none;
+            }
+            
+            .nav > .nav-links {
+              display: inline;
+              float: right;
+              font-size: 18px;
+            }
+            
+            .nav > .nav-links > a {
+              display: inline-block;
+              padding: 13px 10px 13px 10px;
+              text-decoration: none;
+              color: #efefef;
+            }
+            
+            .nav > .nav-links > a:hover {
+              background-color: rgba(0, 0, 0, 0.3);
+            }
+            
+            .nav > #nav-check {
+              display: none;
+            }
+            
+            @media (max-width:600px) {
+              .nav > .nav-btn {
+                display: inline-block;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+              }
+              .nav > .nav-btn > label {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                padding: 13px;
+              }
+              .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+                background-color: rgba(0, 0, 0, 0.3);
+              }
+              .nav > .nav-btn > label > span {
+                display: block;
+                width: 25px;
+                height: 10px;
+                border-top: 2px solid #eee;
+              }
+              .nav > .nav-links {
+                position: absolute;
+                display: block;
+                width: 100%;
+                background-color: #333;
+                height: 0px;
+                transition: all 0.3s ease-in;
+                overflow-y: hidden;
+                top: 50px;
+                left: 0px;
+              }
+              .nav > .nav-links > a {
+                display: block;
+                width: 100%;
+              }
+              .nav > #nav-check:not(:checked) ~ .nav-links {
+                height: 0px;
+              }
+              .nav > #nav-check:checked ~ .nav-links {
+                height: calc(100vh - 50px);
+                overflow-y: auto;
+              }
+            }
+                    </style>
+                    <div class="nav">
+              <input type="checkbox" id="nav-check">
+              <div class="nav-header">
+                <div class="nav-title">
+                  DOCUFIX
+                </div>
+              </div>
+              <div class="nav-btn">
+                <label for="nav-check">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+              </div>
+              
+              <div class="nav-links">
+            <!--    <a href="DOCUFIX.png" target="_blank"></a>-->
+                <a href="#" target="_blank">About Us</a>
+                <a href="#" target="_blank">Team</a>
+                <a href="#" target="_blank">Sponsors</a>
+            
+              </div>
+            </div>
+                </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Ubuntu&display=swap" rel="stylesheet">
+    <title>Docufix | Compare Text</title>
+
+    <style>
+  *{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 60px 60px 90px 30px;
+    background-color: #EEF3F3;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#file-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;;
+}
+    #file{
+        display: flex;;
+        border-right: 2px solid black;
+        padding: 20px 30px 20px 0px;
+        align-items: center;
+    }
+    #text{
+        display: flex;
+        padding: 20px 0 20px 30px;
+        align-items: center;;
+    }
+
+#text-compare{
+    display: flex;
+    padding: 30px 60px;
+    justify-content: space-between;
+}
+    #text-1{
+        width: 44%;
+    }
+        .labels{
+            display: flex;
+            padding: 10px 0px 10px 30px;
+            width: 100%;
+            background-color: #000000;
+            color: white;
+            margin-bottom: -7px;
+            font-weight: bold;
+            
+        }
+            .labels img{
+                margin-right: 10px;
+            }
+    #arrow{
+        align-self: center;
+        
+    }
+    #text-2{
+        width: 44%;
+    }
+
+    .input-txt{
+        margin-top: -15px;
+        width: 100%;
+        height: 400px;
+        padding: 15px 30px;
+        color: white;;
+    }
+
+    #button{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+        button{
+            border-radius: 20px;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+            button:hover{
+                font-weight: bold;
+                background-color: #221e1e;
+            }
+            button img{
+            width: 16.5px;
+            height: 16.5px;
+            vertical-align: middle;
+            margin-right: 10px;
+            }
 
 
-   <title>MERCY'S WEBSITE CV</title>
-   <!-- Bootstrap core CSS -->
-   <link href="bootstrap.css" rel="stylesheet">
-   <link rel="stylesheet" href="css/font-awesome.min.css">
 
-   <!-- Link the main.css stylesheet -->
-   <link href="main.css" rel="stylesheet">
-   
-   <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
-   <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-   <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+@media screen and (max-width: 600px){
 
-   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-   <!--[if lt IE 9]>
-     <script src="js/html5shiv.js"></script>
-     <script src="js/respond.min.js"></script>
-   <![endif]-->
- </head>
+    body{
+        padding: 60px 30px;
+        text-align: center;
+    }
 
-   
-<!-- Bootstrap core CSS -->
-<link href="bootstrap.css" rel="stylesheet">
-<link rel="stylesheet" href="font-awesome.min.css">
+    #main-text{
+        margin-bottom: 25px;
+        font-size: 24px;
+    }
+    #file-text{
+        font-size: 18px;
+    }
 
-<!-- Link the main.css stylesheet -->
-<link href="main.css" rel="stylesheet">
+    #text-compare{
+        flex-direction: column;
+        padding: 30px 10px 10px 10px ;
+    }
+    #text-2, #text-1{
+        width: 100%;
+    }
 
-<!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
-<link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    button{
+        width: 70%;
+        font-size: 15px;
+    }
 
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-  <script src="js/html5shiv.js"></script>
-  <script src="js/respond.min.js"></script>
-<![endif]-->
+}
+
+    </style>
 </head>
 <body>
-  <div class="header" id="headerwrap">
-    <div class="container">
-      <div class="row">
-            <div class="col-lg-12">
-              <h1><b>MERCY NWAMARA</b></h1>
-              <h2>Software Developer</h2>
-              <p><a href="mailto:nwamaramercy@gmail.com"><h3>nwamaramercy@gmail.com</h3></a></p>
-              <p><h3>Tel.: +2348088880886</h3></p>
-              <p><h3>Address: Major Salawu, Agbowo, Ibadan, Nigeria</h3></p>
-            </div>
-        </div><!--/.col-lg-12-->
-      </div><!--/.row-->
-    </div><!--/.container-->
-  </div><!--/.#headerwrap-->
-  
+    <h1 id="main-text">Compare two documents</h1>
 
-
- <section id="about" name="about"></section>
-  <div class="about">    
-    <div class="container">
-      <div class="row"> 
-        <div class="col-lg-2 col-lg-offset-1">
-          <h3><b>ABOUT ME</b></h3>
+    <div id="file-text">
+        <div id="file">
+            <img class="top-icons" src="https://res.cloudinary.com/dtbjhs8a6/image/upload/v1571193844/samples/figma%20career-list/lario/xisa8mltboqmepbzjqks.png">
+            <span class="compare">File</span>
         </div>
-        <div class="col-lg-6">
-            <p><h5>I am an open minded team-player who is passionate about data. It is a driving force in my life. <br/> I personally believe that there is nothing tangible without data. I also have an insatiable thirst for knowledge, this has made me a very quick learner. <br/> I also have excellent communication skills and quick learning ability, time management skills.</h6></p>
+
+        <div id="text">
+            <img class="top-icons" src="https://res.cloudinary.com/dtbjhs8a6/image/upload/v1571193193/samples/figma%20career-list/lario/slpij76xxh4f7bpixbr5.png">
+            <span class="compare">Text</span>
         </div>
-      </div><!--/.row-->
-    </div><!--/.container-->
-  </div><!--/ #intro-->
-  <hr/>
-
-  
- <section class= "wtf" id="resume" name="resume">
- <div class= "">
-    <!-- EDUCATION SECTION -->
-    <div class= "resume">
-    <div class="container desc">
-     <div class="row">
-       
-             <div class="col-lg-2 col-lg-offset-1">
-                 <h3><b>EDUCATION</b></h3>
-             </div>
-             <!-- EDIT: education line 1 -->
-             <div class="col-lg-6">
-                <p><t><b>Bachelor of Agriculture, Department of Agronomy</b></t><br/>
-                    University of Ibadan</p>
-                </div>
-                <div class="col-lg-3">
-                    <p><sm>2013-2019</sm><br/>
-                </div>
-
-                  <!-- EDIT: education line 2 -->
-             <div class="col-lg-6 col-lg-offset-3">
-                <p><t>Data Science Nigeria, Artificial Intelligence Invasion</t><br/>
-                   Oyo State
-                    <!--<br/><i>Extra info here</i>-->
-                </p>
-            </div>
-            <div class="col-lg-3">
-                <p><sm>2019</sm></p>
-            </div>
-
-    </div><!--/.row -->
-    <br>
-    <hr/>
-</div>
-
-  <!-- WORK SECTION -->
-  <div class="container desc">
-    <div class="row">
-
-            <div class="col-lg-2 col-lg-offset-1">
-                <h3><b>WORK EXPERIENCE</b></h3>
-            </div>
-            <!-- EDIT: work line 1 -->
-            <div class="col-lg-6">
-                <p class="tight"><t><b>Plant Pathology Research Assistant</b></t><br/>
-                    Institute of Agricultural Research and Training (IAR&T), Apata<br/>
-                </p>
-                <p><more>Isolation of microbial culture for beneficial uses.</more></p>
-                <p><more>Testing of different plant varieties subjected to various chemical processes for the production of biogel.</more></p>
-            </div>
-            <div class="col-lg-3">
-                <p><sm>2019 <br />
-                   Oyo State</sm></p>
-            </div>
-            
-            <!-- EDIT: work line 2-->
-            <div class="col-lg-6 col-lg-offset-3">
-                <p class="tight"><t><b>Android Development Trainee</b></t><br/>
-                   Andela Learning Community 4.0 <br/>
-                </p>
-                <p><more>Timely and accurate submission of challenges during the training course as a test of knowledge by ALC.</more></p>
-                <p><more>Self training and assessment by constant studying and practising of materials provided.</more></p>
-            </div>
-            <div class="col-lg-3">
-                <p><sm>2019 to present <br />
-                   Oyo State</sm></p>
-            </div>
-    </div><!--/.row -->
-    <br>
-    <hr/>
-</div>
- <!-- LEADERSHIP AND VOLUNTEER EXPERIENCE SECTION -->
- <div class= "">
-    <div class="container desc">
-        <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
-                    <h3><b>LEADERSHIP AND VOLUNTEER EXPERIENCE</b></h3>
-                </div>
-   
-                <!-- EDIT: LEADERSHIP AND VOLUNTEER EXPERIENCE line 1-->
-                <div class="col-lg-6">
-                    <p><t><b>Social Director</b></t><br/>
-                        Agronomy Club Undergraduate, University of Ibadan<br/>
-                    </p>
-                    <p><more>Mentored students through exposure to beneficial opportunities</more></p>
-                    <p><more>Budget development, analysis and fund sourcing</more></p>
-                    <p><more>Planned, organized and coordinated departmental functions</more></p>
-                    <p><more>Ensured the respect of Guests of Honour and fulfillment of students at events</more></p>
-                </div>
-                <div class="col-lg-3">
-                    <p><sm>2017-2019</sm></p>
-                </div>
+        
+    </div>
     
-                <!-- EDIT: LEADERSHIP AND VOLUNTEER EXPERIENCE line 2-->
-                <div class="col-lg-6 col-lg-offset-3">
-                    <p class="tight"><t><b>Family Head</b></t><br/>
-                       Junior Chamber International
-                    </p>
-                    <p><more>Attended trainings and conferences for personal development and ensured mutual relationship amongst members</more></p>
+    <section id="text-compare">
+        <div id="text-1">
+            <label for="text" class="two-text">
+                <div class="labels" >
+                    <img class="white-txt" src="https://res.cloudinary.com/dtbjhs8a6/image/upload/v1571194266/samples/figma%20career-list/lario/ct8pi1qsjgonxsa7zdyn.png">
+                    <span id="white-txt" class="compare">Text</span>
                 </div>
-                <div class="col-lg-3">
-                    <p><sm>2018</sm></p>
-                </div> 
-        </div><!--/.row -->
-        <br>
-   </div></div></div></div><!--/.container -->
-   <hr/>
-
-   <section class= "wtf" id="skills and interests" name="skills and interests"></section>
-    <div class= "">
-       <!-- SKILLS SECTION -->
-       <div class= "skills and interests">
-       <div class="container desc">
-        <div class="row">
-
-                 <div class="col-lg-2 col-lg-offset-1">
-                    <h3><b>SKILLS AND INTERESTS</b></h3>
-                 </div>
-                 <div class="col-lg-6">
-                    <p><t><b>Languages</b></t><br/>
-                        English Language and Yoruba Language proficient</p>
-                    <p><t><b>Tool</b></t><br/>
-                        Anaconda, Android Studio, Blogger and Visual Studio Code</p>
-                    <p>Tools: Anaconda, Android Studio, Blogger and Visual Studio Code</p>
-                    <p><t><b>Programming Languages</b></t><br/>
-                         Python, <abbr title="Hyper Text Markup Language">HTML, </abbr> <abbr title="Cascading Sheet Style">CSS  </abbr> and <abbr title="Javascript" > JS </abbr>proficient. Android (Java), beginner</p>
-                    <p><t><b>Interests</b></t><br/>
-                         Technology, Business, Entertainment, Learning and Self growth</p>
-                 </div>
-
-                </div><!--/.row-->
-            </div><!--/.container-->
+            </label> <br>
+            <textarea placeholder="Write your text here" class="input-txt"></textarea>
+        </div>
+        <div id="arrow">
+            <img id="compare-txt" src="https://res.cloudinary.com/dtbjhs8a6/image/upload/v1571193103/samples/figma%20career-list/lario/hyu5pvtsmqxymfx5ohwi.png">
         </div>
 
-        <section id="social links" name="social links"></section>
-        <!--FOOTER DESCRIPTION -->
-        <div id="footwrap" class="footer">
-            <div class="container">
-                <div class="row">          
-                        <div class="col-lg-6">
-                         <p><b>SOCIAL LINKS</b></p>
-                          <p>
-                            <!-- EDIT: Social Links. Replace # with your URL for each -->
-                            <a href="https://twitter.com/itsmercie?s=09" target="_blank">Check out my Twitter Here</a></p>
-                            <p><a href="https://www.linkedin.com/in/mercy-nwamara,334379b4" target="_blank">Let's connect on linkedin Here</a></p>
-                            <!--<i><a href="#"><i class="icon-github"</i></a>-->
-                        </div>
-                        <div class="col-lg-3">
-                           <a href="index1.html">Wanna Reach Me?</a>
-                        </div>
-                    </div>
-                </div><!--/.row -->
-            </div><!--/.container -->
-        </div><!--/ #footer -->
-    </body>
-    
+        <div class="add-text add-text2" id="text-2">
+            <label for="text" class="two-text">
+                <div class="labels">
+                    <img class="white-txt" src="https://res.cloudinary.com/dtbjhs8a6/image/upload/v1571194266/samples/figma%20career-list/lario/ct8pi1qsjgonxsa7zdyn.png">
+                    <span id="white-txt" class="compare">Text</span>
+                </div>
+            </label> <br>
+            <textarea placeholder="Write your text here" class="input-txt"></textarea>
+        </div>
+    </section>
+    <div id="button">
+        <button type="submit">
+            <img class="compare-img" src="https://res.cloudinary.com/dtbjhs8a6/image/upload/v1571193103/samples/figma%20career-list/lario/butfaguuckar9dl0i1ug.png">
+            <span class="compare-btn-txt">COMPARE</span>
+        </button>
+    </div>
+</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>%title%</title>
+    <style>
+   footer{
+    background-color: grey;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 5px;
+   }
+   footer .social {
+    display: inline-flex;
+    margin-left: 28px;
+   }
+   h1 {
+    font-size: 24px;
+    color: white;
+   }
+   p {
+    font-size: 18px;
+    color: white;
+    padding-left: 370px;
+   }
+   .social_media {
+    list-style: none;
+    display: inline-flex;
+    padding-left: 340px;
+
+   }
+   .fa {
+    font-size: 25px;
+    margin: 10px;
+    color: white;
+   }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="social">
+            <h1>DOCUFIX</h1>
+            <p>Copyright 2019 Docufix.io and HNG6 affiliates</p>
+            <div>
+                <ul class="social_media">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div> 
+    </footer>
+</body>
 </html>
-
-  
